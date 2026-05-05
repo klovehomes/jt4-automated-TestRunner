@@ -1,0 +1,62 @@
+.wrap {
+  overflow-x: auto;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 0.5px solid var(--border);
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+  table-layout: fixed;
+}
+
+.table th {
+  background: var(--bg3);
+  padding: 5px 8px;
+  text-align: left;
+  border-bottom: 0.5px solid var(--border2);
+  font-weight: 500;
+  color: var(--text2);
+  white-space: nowrap;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.table td {
+  padding: 4px 8px;
+  border-bottom: 0.5px solid var(--border);
+  vertical-align: top;
+  word-break: break-word;
+  color: var(--text);
+}
+
+.table tr:last-child td { border-bottom: none; }
+.table tr:hover td { background: rgba(255,255,255,0.02); }
+
+.stepId { font-weight: 500; white-space: nowrap; color: var(--accent); width: 60px; }
+.url { font-family: var(--font-mono); font-size: 10px; color: var(--text2); width: 140px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.muted { color: var(--text3); }
+
+.tag {
+  display: inline-block;
+  font-size: 10px;
+  padding: 1px 5px;
+  border-radius: 8px;
+  margin-right: 3px;
+  white-space: nowrap;
+}
+
+.tagClick  { background: rgba(79,142,247,0.15); color: #93c5fd; }
+.tagType   { background: rgba(62,207,142,0.15); color: #3ecf8e; }
+.tagSel    { background: rgba(167,139,250,0.15); color: #c4b5fd; }
+.tagEnv    { background: rgba(251,191,36,0.15);  color: #fbbf24; }
+.tagAssert { background: rgba(62,207,142,0.15);  color: #3ecf8e; }
+.tagBranch { background: rgba(248,113,113,0.15); color: #f87171; }
+
+.expCell { display: flex; flex-wrap: wrap; align-items: center; gap: 3px; }
+.expText { color: var(--text2); font-size: 10px; }

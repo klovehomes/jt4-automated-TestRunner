@@ -1,0 +1,22 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #0f1117;
+  --bg2: #161b27;
+  --bg3: #1e2535;
+  --border: rgba(255,255,255,0.08);
+  --border2: rgba(255,255,255,0.14);
+  --text: #e8eaf0;
+  --text2: #8b91a8;
+  --text3: #555d75;
+  --accent: #4f8ef7;
+  --accent2: #3a6fd8;
+  --success: #3ecf8e;
+  --danger: #f87171;
+  --warn: #fbbf24;
+  --info: #93c5fd;
+  --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+}
+
+html { font-size: 14px; }
+body { background: var(--bg); color: var(--text); font-family: 'DM Sans', system-ui, sans-serif; line-height: 1.5; min-height: 100vh; }
